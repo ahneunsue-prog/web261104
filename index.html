@@ -1,0 +1,203 @@
+
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>내 영화 보드</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- 헤더 -->
+  <header class="top">
+    <h1>🎬 내 영화 보드</h1>
+    <nav>
+      <ul>
+        <li><a href="#mine">내 인생 영화</a></li>
+        <li><a href="#boxoffice">박스오피스</a></li>
+        <li><a href="detail.html">상세</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- 히어로 -->
+  <section class="hero">
+    <h2>내가 좋아하는 영화 이야기</h2>
+    <p>내 인생 영화 5편과 일별 박스오피스 TOP 5</p>
+    <p>다양한 영화들을 한눈에 만나보세요!</p>
+  </section>
+
+  <main>
+
+    <!-- 10주차 실습 결과 출력 -->
+    <pre id="out"></pre>
+
+    <!-- 내 인생 영화 -->
+    <section id="mine">
+      <h2>내 인생 영화 5편</h2>
+
+      <div class="board">
+
+        <article class="card">
+          <img class="poster"
+               src="https://image.tmdb.org/t/p/w342/mt6uZzy7DAsncHlGGzMsyNgLR6v.jpg"
+               alt="스파이더맨: 브랜드 뉴 데이 포스터">
+          <span class="badge">⭐ 8.5</span>
+          <div class="info">
+            <h3>스파이더맨: 브랜드 뉴 데이</h3>
+            <p class="year">2026</p>
+            <p class="overview">4년 전 소중한 사람들을 지키기 위해 모두의 기억에서 사라진 피터 파커. 친절한 이웃 스파이더맨으로서 뉴욕을 지키며 고독한 삶을 살아가던 피터는 어느 날, 예상치 못한 DNA 변이로 인해 통제 불가능한 힘에 사로잡히고 그의 진짜 정체를 알고 있는 적까지 마주하게 된다. 타인의 의식을 조종하는 정체불명의 존재로 인해 모두가 피터를 노리는 적이 될 수 있는 혼란 속에서 피터는 다시 위협에 빠진 MJ와 모두를 지키기 위해 스파이더맨으로 그들 앞에 서게 되는데...</p>
+          </div>
+        </article>
+
+        <article class="card">
+          <img class="poster"
+               src="https://image.tmdb.org/t/p/w342/vpnVM9B6NMmQpWeZvzLvDESb2QY.jpg"
+               alt="인사이드 아웃 2 포스터">
+          <span class="badge">⭐ 7.5</span>
+          <div class="info">
+            <h3>인사이드 아웃 2</h3>
+            <p class="year">2024</p>
+            <p class="overview">13살이 된 라일리의 행복을 위해 매일 바쁘게 머릿속 감정 컨트롤 본부를 운영하는 ‘기쁨’, ‘슬픔’, ‘버럭’, ‘까칠’, ‘소심’. 그러던 어느 날, 낯선 감정인 ‘불안’, ‘당황’, ‘따분’, ‘부럽’이가 본부에 등장하고, 언제나 최악의 상황을 대비하며 제멋대로인 ‘불안’이와 기존 감정들은 계속 충돌한다. 결국 새로운 감정들에 의해 본부에서 쫓겨나게 된 기존 감정들은 다시 본부로 돌아가기 위해 위험천만한 모험을 시작하는데…</p>
+          </div>
+        </article>
+
+        <article class="card">
+          <img class="poster"
+               src="https://image.tmdb.org/t/p/w342/kgwjIb2JDHRhNk13lmSxiClFjVk.jpg"
+               alt="겨울왕국 포스터">
+          <span class="badge">⭐ 7.2</span>
+          <div class="info">
+            <h3>겨울왕국</h3>
+            <p class="year">2013</p>
+            <p class="overview">서로가 최고의 친구였던 자매 엘사와 안나. 하지만 언니 엘사에게는 하나뿐인 동생에게조차 말 못할 비밀이 있다. 모든 것을 얼려버리는 신비로운 힘이 바로 그 것. 엘사는 통제할 수 없는 자신의 힘이 두려워 왕국을 떠나 북쪽 산으로 도망치고, 홀로 그곳에서 얼음 궁전을 지어 지내게 된다. 한편 얼어버린 왕국의 저주를 풀기 위해 안나는 언니를 찾아 나서고, 그 과정에서 안나는 까칠한 매력의 얼음장수 크리스토프와 만나 영원히 얼어붙은 왕국을 구해내기 위해 함께 고군분투한다.</p>
+          </div>
+        </article>
+
+        <article class="card">
+          <img class="poster"
+               src="https://image.tmdb.org/t/p/w342/hlK0e0wAQ3VLuJcsfIYPvb4JVud.jpg"
+               alt="주토피아 포스터">
+          <span class="badge">⭐ 7.8</span>
+          <div class="info">
+            <h3>주토피아</h3>
+            <p class="year">2016</p>
+            <p class="overview">어릴 적부터 경찰이 꿈이었던 토끼 주디 홉스는 주변의 만류에도 불구하고 경찰학교에 들어가 당당히 수석으로 졸업한다. 온갖 동물들이 모여 살며 교양 있고 세련된 라이프 스타일을 주도하는 대도시 주토피아에 자원한 주디는 의욕을 안고 출근하지만, 상사는 작은 토끼라는 이유로 주차관리 같은 소일거리만 시킨다. 따분하게 업무를 보던 주디는 아이스크림 불법 판매를 일삼는 사기꾼 여우 닉 와일드를 알게 되고, 그와 함께 48시간 안에 주토피아에서 벌어지고 있는 연쇄 실종사건을 추적해야만 하는데...</p>
+          </div>
+        </article>
+
+        <article class="card">
+          <img class="poster"
+               src="https://image.tmdb.org/t/p/w342/9tzN8sPbyod2dsa0lwuvrwBDWra.jpg"
+               alt="모아나 포스터">
+          <span class="badge">⭐ 7.6</span>
+          <div class="info">
+            <h3>모아나</h3>
+            <p class="year">2016</p>
+            <p class="overview">모투누이 섬 족장의 딸 모아나는 바다를 동경하는 소녀다. 바다의 선택을 받은 모아나는 족장이 돼야 하는 운명과 항해에 대한 꿈 사이에서 갈등하며 살아간다. 그러던 중 모든 것이 완벽했던 모투누이 섬이 저주에 걸린다. 모아나는 아버지의 뜻을 거역하고 섬을 구할 묘책을 찾아 바다로 떠날 결심을 한다. 저주를 푸는 열쇠는 신이 선택한 전설의 영웅, 반신반인 마우이가 쥐고 있다. 모아나는 마우이를 설득해 모투누이 섬의 저주를 풀기 위한 모험을 시작한다. 이 모험은 각자의 정체성을 찾아가는 여정이 된다.</p>
+          </div>
+        </article>
+
+      </div>
+    </section>
+
+    <!-- 일별 박스오피스 -->
+    <section id="boxoffice">
+      <h2>일별 박스오피스 TOP 5</h2>
+      <p class="basis">KOBIS 기준일: 2026-10-18</p>
+
+      <div class="board">
+
+        <article class="card">
+          <img class="poster"
+               src="https://image.tmdb.org/t/p/w342/5TMyytCI5Pfc9c1eNsljiCdiB05.jpg"
+               alt="극장판 치이카와: 인어 섬의 비밀 포스터">
+          <span class="rank">1위</span>
+          <span class="badge">⭐ 7.4</span>
+          <div class="info">
+            <h3>극장판 치이카와: 인어 섬의 비밀</h3>
+            <p class="year">개봉일: 2026-09-30</p>
+            <p class="audience">누적 관객 수: 1,828,903명</p>
+            <p class="change">-</p>
+          </div>
+        </article>
+
+        <article class="card">
+          <img class="poster"
+               src="https://image.tmdb.org/t/p/w342/c55ijsOdntj6P25vDwHLdgsBpmV.jpg"
+               alt="암살자(들) 포스터">
+          <span class="rank">2위</span>
+          <span class="badge">⭐ 7.2</span>
+          <div class="info">
+            <h3>암살자(들)</h3>
+            <p class="year">개봉일: 2026-09-23</p>
+            <p class="audience">누적 관객 수: 3,249,086명</p>
+            <p class="change">-</p>
+          </div>
+        </article>
+
+        <article class="card">
+          <img class="poster"
+               src="https://image.tmdb.org/t/p/w342/ueigb5zra1tj6FTK9yhh2P33P9B.jpg"
+               alt="타짜: 벨제붑의 노래 포스터">
+          <span class="rank">3위</span>
+          <span class="badge">⭐ 7.0</span>
+          <div class="info">
+            <h3>타짜: 벨제붑의 노래</h3>
+            <p class="year">개봉일: 2026-09-23</p>
+            <p class="audience">누적 관객 수: 1,911,186명</p>
+            <p class="change">-</p>
+          </div>
+        </article>
+
+        <article class="card">
+          <img class="poster"
+               src="https://image.tmdb.org/t/p/w342/8ze9OcVuFiy94s6FFPvsn4oC2e1.jpg"
+               alt="오디세이 포스터">
+          <span class="rank">4위</span>
+          <span class="badge">⭐ 8.0</span>
+          <div class="info">
+            <h3>오디세이</h3>
+            <p class="year">개봉일: 2026-08-05</p>
+            <p class="audience">누적 관객 수: 12,267,655명</p>
+            <p class="change">-</p>
+          </div>
+        </article>
+
+        <article class="card">
+          <img class="poster"
+               src="https://image.tmdb.org/t/p/w342/6ke2azOZ9sfe7SMn7rPhQWd0FPD.jpg"
+               alt="웨일폴: 고래에 먹힌 남자 포스터">
+          <span class="rank">5위</span>
+          <span class="badge">⭐ 6.6</span>
+          <div class="info">
+            <h3>웨일폴: 고래에 먹힌 남자</h3>
+            <p class="year">개봉일: 2026-10-14</p>
+            <p class="audience">누적 관객 수: 56,361명</p>
+            <p class="change">-</p>
+          </div>
+        </article>
+
+      </div>
+    </section>
+  </main>
+
+  <!-- 푸터 -->
+  <footer>
+    <p>이 사이트는 TMDB API를 사용하지만 TMDB의 보증이나 인증을 받지 않았습니다.</p>
+    <p>This product uses the TMDB API but is not endorsed or certified by TMDB.</p>
+    <p>영화 정보 및 포스터:
+      <a href="https://www.themoviedb.org" target="_blank" rel="noopener noreferrer">TMDB</a>
+    </p>
+    <p>박스오피스 출처:
+      <a href="https://www.kobis.or.kr" target="_blank" rel="noopener noreferrer">KOBIS</a>
+      (2026-10-18 기준)
+    </p>
+  </footer>
+
+  <!-- 10주차 자바스크립트 연결 -->
+  <script src="data.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
